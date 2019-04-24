@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Group5 Restaurant - Book Table</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="/public/img/beer.png" type="image/png">
+  <link rel="stylesheet" href="/public/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/book-table.css">
+</head>
+<body>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 offset-xl-2 col-xl-5">
+          <div class="search-wrapper">
+            <h3>Book A Table</h3>
+
+            <form class="search-form" action="/api/book-table" method="POST">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your Name" required name="name">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email Address" required name="email">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Phone Number" required name="phone" minlength="10" maxlength="10">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Select Date" onfocus="(this.type = 'date')" onfocusout = "(this.type = 'text')" required name="date">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Select People" onfocus="(this.type = 'number')" onfocusout = "(this.type = 'text')" required name="people" min="1">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-users"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-group-position">
+                <button class="button border-0" type="submit">Make Reservation</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>>
