@@ -1,0 +1,55 @@
+.Button {
+    background-color: red;
+    width: 30%;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button:disabled {
+    color: white;
+    cursor: not-allowed;
+}
+
+
+.Button:hover {
+    color: orangered;
+    background-color: white
+}
+
+.Normal {
+    color: white;
+}
+
+.Success {
+    background-color: white;
+    color: #5C9210;
+}
+
+.Danger {
+    background-color: white;
+    color: #944317;
+}
+
+.LogIn {
+    background-color: cornflowerblue;
+    color: white;
+    margin-top: 30px;
+}
+
+.Swicth {
+    width: 50%;
+    margin-top: 50px;
+    background-color: chocolate;
+}

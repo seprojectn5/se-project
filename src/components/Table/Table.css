@@ -1,0 +1,33 @@
+.Table {
+    width: 25%;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 10;
+}
+
+.Table:hover {
+    border: 2px solid blue;
+}
+
+.Table img {
+    width: 200px;
+    height: 200px;
+}
+
+.status {
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    font-weight: 700;
+}
+
+.available {
+    background-color: rgb(43, 245, 53);
+    color: white;
+}
+
+.booked {
+    background-color: rgb(245, 43, 43);
+    color: white;
+}
